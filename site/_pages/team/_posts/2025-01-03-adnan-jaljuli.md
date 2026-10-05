@@ -1,8 +1,8 @@
 ---
 layout: member
 category: student
-title: Adnan Abulfattah Adnan Jaljuli 
-image: Scientist.jpeg
+title: Adnan Jaljuli 
+image: adnan-jaljuli.jpg
 role: Ph.D. Student
 permalink: 'team/adnan-jaljuli'
 social:
@@ -12,7 +12,6 @@ social:
     orcid:
 education: []
 ---
-
 Member of the Sabre Kais Group. Email: [ajaljul@ncsu.edu](mailto:ajaljul@ncsu.edu).
 
 **Email:** [ajaljul@ncsu.edu](mailto:ajaljul@ncsu.edu)
