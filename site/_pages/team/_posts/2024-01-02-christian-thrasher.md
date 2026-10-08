@@ -4,7 +4,7 @@ category: student
 title: Christian Thrasher 
 image: Scientist.jpeg
 role: Ph.D. Student
-permalink: 'team/murat-isik'
+permalink: 'team/christian-thrasher'
 social:
     website:
     google-scholar:
@@ -12,7 +12,6 @@ social:
     orcid:
 education: []
 ---
-
 Member of the Sabre Kais Group. Email: [cthrash@ncsu.edu](mailto:cthrash@ncsu.edu).
 
 **Email:** [cthrash@ncsu.edu](mailto:cthrash@ncsu.edu)
