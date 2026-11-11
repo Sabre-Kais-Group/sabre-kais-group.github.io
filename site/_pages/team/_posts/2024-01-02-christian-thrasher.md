@@ -6,12 +6,12 @@ image: Scientist.jpeg
 role: Ph.D. Student
 permalink: 'team/christian-thrasher'
 social:
-    website:
+    website: https://www.linkedin.com/in/christian-thrasher-a054bb244/
     google-scholar:
     github:
     orcid:
 education: []
 ---
-Member of the Sabre Kais Group. Email: [cthrash@ncsu.edu](mailto:cthrash@ncsu.edu).
+Member of the Sabre Kais Group.
 
 **Email:** [cthrash@ncsu.edu](mailto:cthrash@ncsu.edu)

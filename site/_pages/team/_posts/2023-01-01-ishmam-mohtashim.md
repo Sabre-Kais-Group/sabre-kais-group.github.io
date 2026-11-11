@@ -6,13 +6,12 @@ image: ishmam-mohtashim.png
 role: Ph.D. Student, Chemistry
 permalink: 'team/ishmam-mohtashim'
 social:
-    website:
+    website: https://www.linkedin.com/in/shah-ishmam-mohtashim-77287685/
     google-scholar: https://scholar.google.com/citations?user=ZAS3NtMAAAAJ&hl=en
     github:
     orcid:
 education: []
 ---
-
-Member of the Sabre Kais Group. Email: [smohtas@ncsu.edu](mailto:smohtas@ncsu.edu).
+Member of the Sabre Kais Group.
 
 **Email:** [smohtas@ncsu.edu](mailto:smohtas@ncsu.edu)
