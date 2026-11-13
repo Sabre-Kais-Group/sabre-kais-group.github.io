@@ -1,6 +1,6 @@
 ---
 layout: member
-category: staff
+category: pi
 title: Dr. Sabre Kais
 image: sabre-kais.jpg
 role: Goodnight Distinguished Chair in Quantum Computing

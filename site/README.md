@@ -31,7 +31,7 @@ Files live in [`_pages/team/_posts/`](_pages/team/_posts/).
 ```yaml
 ---
 layout: member
-category: staff          # use "staff" for PI/postdocs, "student" for grad students
+category: staff          # "pi" for the PI, "staff" for postdocs, "student" for grad students
 title: Jane Doe
 image: jane-doe.jpg      # file must exist in images/team/
 role: Ph.D. Student, Chemistry

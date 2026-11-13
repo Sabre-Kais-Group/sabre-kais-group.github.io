@@ -1,0 +1,38 @@
+{% assign member = include.member %}
+{% assign links = "" | split: "" %}
+{% if member.social.website %}
+    {% if member.category == 'pi' %}{% assign profile_label = "Faculty profile" %}{% else %}{% assign profile_label = "Profile" %}{% endif %}
+    {% capture link %}<a href="{{ member.social.website }}" target="_blank" rel="noopener">{{ profile_label }}</a>{% endcapture %}
+    {% assign links = links | push: link %}
+{% endif %}
+{% if member.social['google-scholar'] %}
+    {% capture link %}<a href="{{ member.social['google-scholar'] }}" target="_blank" rel="noopener">Google Scholar</a>{% endcapture %}
+    {% assign links = links | push: link %}
+{% endif %}
+{% if member.social.orcid %}
+    {% capture link %}<a href="{{ member.social.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endcapture %}
+    {% assign links = links | push: link %}
+{% endif %}
+{% if member.cv %}
+    {% capture link %}<a href="{{ member.cv | relative_url }}">Curriculum Vitae (PDF)</a>{% endcapture %}
+    {% assign links = links | push: link %}
+{% endif %}
+<div class="team-member-card">
+    <div class="row team-member-row">
+        <div class="col-sm-4 col-md-3 text-center">
+            <a href="{{ member.url | relative_url }}">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                    class="img-responsive img-thumbnail team-member-photo"
+                    alt="{{ member.title }}"/>
+            </a>
+        </div>
+
+        <div class="col-sm-8 col-md-9 team-member-info">
+            <h4 class="team-member-name"><a href="{{ member.url | relative_url }}">{{ member.title }}</a></h4>
+            <p class="team-member-role">{{ member.role }}</p>
+            {% if links.size > 0 %}
+            <p class="team-member-links">{{ links | join: " &middot; " }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>

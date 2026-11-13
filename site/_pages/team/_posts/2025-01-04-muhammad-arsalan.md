@@ -6,7 +6,7 @@ image: muhammad-arsalan.jpg
 role: Ph.D. Student, Computer Engineering
 permalink: 'team/muahmmad-arsalan'
 social:
-    website: www.linkedin.com/in/muahmmad-arsalan-ali-424626193
+    website: https://www.linkedin.com/in/muahmmad-arsalan-ali-424626193
     google-scholar: https://scholar.google.com/citations?user=AWw5QsAAAAAJ&hl=en
     github:
     orcid:

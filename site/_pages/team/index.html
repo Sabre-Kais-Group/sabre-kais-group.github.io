@@ -8,55 +8,24 @@ permalink: /team/
 
 <h1>{{page.title}}</h1>
 
-<p>Principal investigator, postdoctoral researchers, and graduate students in the Kais Group.</p>
+<!-- <p>Principal investigator, postdoctoral researchers, and graduate students in the Kais Group.</p> -->
 
-<h2><a id="staff"></a>Principal Investigator &amp; Postdocs</h2>
+<h2><a id="pi"></a>Principal Investigator</h2>
+{% assign members = site.posts | where: 'category', 'pi' | sort: 'date' %}
+{% for member in members %}
+{% include team_member_card.html member=member %}
+{% endfor %}
+
+<h2><a id="postdocs"></a>Postdoctoral Researchers</h2>
 {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
 {% for member in members %}
-<div class="team-member-card">
-    <div class="row team-member-row">
-        <div class="col-sm-4 col-md-3 text-center">
-            <a href="{{ member.url | relative_url }}">
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="img-responsive img-thumbnail team-member-photo"
-                    alt="{{ member.title }}"/>
-            </a>
-        </div>
-
-        <div class="col-sm-8 col-md-9 team-member-info">
-            <h4 class="team-member-name"><a href="{{ member.url | relative_url }}">{{ member.title }}</a></h4>
-            <p class="team-member-role">{{ member.role }}</p>
-            {% if member.social.website or member.cv %}
-            <p class="team-member-links">
-                {% if member.social.website %}<a href="{{ member.social.website }}" target="_blank" rel="noopener">Faculty profile</a>{% endif %}
-                {% if member.social.website and member.cv %} &middot; {% endif %}
-                {% if member.cv %}<a href="{{ member.cv | relative_url }}">Curriculum Vitae (PDF)</a>{% endif %}
-            </p>
-            {% endif %}
-        </div>
-    </div>
-</div>
+{% include team_member_card.html member=member %}
 {% endfor %}
 
 <h2><a id="student"></a>Graduate Students</h2>
 {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
 {% for member in members %}
-<div class="team-member-card">
-    <div class="row team-member-row">
-        <div class="col-sm-4 col-md-3 text-center">
-            <a href="{{ member.url | relative_url }}">
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="img-responsive img-thumbnail team-member-photo"
-                    alt="{{ member.title }}"/>
-            </a>
-        </div>
-
-        <div class="col-sm-8 col-md-9 team-member-info">
-            <h4 class="team-member-name"><a href="{{ member.url | relative_url }}">{{ member.title }}</a></h4>
-            <p class="team-member-role">{{ member.role }}</p>
-        </div>
-    </div>
-</div>
+{% include team_member_card.html member=member %}
 {% endfor %}
 
 <h2>Former Group Members</h2>
