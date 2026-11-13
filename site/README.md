@@ -55,7 +55,7 @@ Short bio here.
 
 Every `social:` link you fill in appears as an icon in the link bar under the
 member's name on their profile page. Leave a line blank to hide that icon. A
-`cv:` path (e.g. `cv: '/docs/cv/jane-doe-cv.pdf'`) adds a PDF icon too.
+`cv:` path (e.g. `cv: '/docs/cv/jane-doe-cv.pdf'`) adds a red "CV" button too.
 The icon, tooltip, and order for each key are set in
 [`_data/social_links.yml`](_data/social_links.yml). To support a new kind of
 link, add an entry there and use the same key under `social:`.

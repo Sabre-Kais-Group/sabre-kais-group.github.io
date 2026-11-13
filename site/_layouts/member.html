@@ -38,12 +38,12 @@ layout: default
             {% endif %}
         {% endfor %}
         {% if page.cv %}
-            <li><a href="{{ page.cv | relative_url }}" target="_blank" rel="noopener" title="Curriculum Vitae (PDF)" aria-label="Curriculum Vitae (PDF)"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
+            <li><a href="{{ page.cv | relative_url }}" target="_blank" rel="noopener" title="Curriculum Vitae (PDF)" aria-label="Curriculum Vitae (PDF)"><span class="member-link-text" aria-hidden="true">CV</span></a></li>
         {% endif %}
     {% endcapture %}
     {% assign member_links = member_links | strip %}
     {% if member_links != "" %}
-    <ul class="member-links" aria-label="Links for {{ page.title }}">
+    <ul class="list-inline member-links" aria-label="Links for {{ page.title }}">
         {{ member_links }}
     </ul>
     {% endif %}
