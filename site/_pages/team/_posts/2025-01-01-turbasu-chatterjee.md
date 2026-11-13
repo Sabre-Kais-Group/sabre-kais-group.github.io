@@ -6,7 +6,8 @@ image: turbasu-chatterjee.jpeg
 role: Ph.D. Student, Computer Engineering
 permalink: 'team/turbasu-chatterjee'
 social:
-    website: https://www.linkedin.com/in/turbasu-chatterjee
+    website:
+    linkedin: https://www.linkedin.com/in/turbasu-chatterjee
     google-scholar: https://scholar.google.com/citations?hl=en&user=oAlLg2gAAAAJ
     github:
     orcid:

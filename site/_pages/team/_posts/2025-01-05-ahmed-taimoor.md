@@ -6,7 +6,8 @@ image: ahmed-taimoor.jpg
 role: Ph.D. Student, Computer Science
 permalink: 'team/ahmed-taimoor'
 social:
-    website: https://www.linkedin.com/in/syed-ahmed-taimoor-2274001b8/
+    website:
+    linkedin: https://www.linkedin.com/in/syed-ahmed-taimoor-2274001b8/
     google-scholar: https://scholar.google.com/citations?user=aUn33pcAAAAJ&hl=en
     github:
     orcid:

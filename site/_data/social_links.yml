@@ -1,0 +1,31 @@
+# Icons shown in the link bar on each team member's profile page.
+#
+# Each entry matches a key under `social:` in a member's .md file
+# (_pages/team/_posts/). A link appears only if that member filled in the URL.
+# Order here = order in the bar.
+#
+# To support a new kind of link, add an entry here and use the same key in the
+# member's front matter. Icon names come from Font Awesome 6 Free:
+# https://fontawesome.com/search?o=r&m=free
+
+- key: website
+  label: Website
+  icon: fas fa-globe
+- key: google-scholar
+  label: Google Scholar
+  icon: fab fa-google-scholar
+- key: orcid
+  label: ORCID
+  icon: fab fa-orcid
+- key: linkedin
+  label: LinkedIn
+  icon: fab fa-linkedin-in
+- key: github
+  label: GitHub
+  icon: fab fa-github
+- key: research-gate
+  label: ResearchGate
+  icon: fab fa-researchgate
+- key: twitter
+  label: X (Twitter)
+  icon: fab fa-x-twitter

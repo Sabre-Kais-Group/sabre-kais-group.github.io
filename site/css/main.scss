@@ -111,6 +111,49 @@ figcaption {
   display: block;
 }
 
+/* Icon link bar on individual profile pages */
+.member-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 8px auto 24px;
+  padding: 10px 16px;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.member-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.member-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #F2F2F2;
+  color: #333333;
+  font-size: 20px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.member-links a:hover,
+.member-links a:focus {
+  background: #CC0000; /* Wolfpack Red */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.member-links a:focus-visible {
+  outline: 2px solid #CC0000;
+  outline-offset: 2px;
+}
+
 .research-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

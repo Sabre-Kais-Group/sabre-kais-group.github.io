@@ -5,6 +5,10 @@
     {% capture link %}<a href="{{ member.social.website }}" target="_blank" rel="noopener">{{ profile_label }}</a>{% endcapture %}
     {% assign links = links | push: link %}
 {% endif %}
+{% if member.social.linkedin %}
+    {% capture link %}<a href="{{ member.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endcapture %}
+    {% assign links = links | push: link %}
+{% endif %}
 {% if member.social['google-scholar'] %}
     {% capture link %}<a href="{{ member.social['google-scholar'] }}" target="_blank" rel="noopener">Google Scholar</a>{% endcapture %}
     {% assign links = links | push: link %}

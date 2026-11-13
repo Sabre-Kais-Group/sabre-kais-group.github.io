@@ -2,11 +2,12 @@
 layout: member
 category: student
 title: Christian Thrasher 
-image: Scientist.jpeg
+image: christian-thrasher.jpg
 role: Ph.D. Student
 permalink: 'team/christian-thrasher'
 social:
-    website: https://www.linkedin.com/in/christian-thrasher-a054bb244/
+    website:
+    linkedin: https://www.linkedin.com/in/christian-thrasher-a054bb244/
     google-scholar:
     github:
     orcid:

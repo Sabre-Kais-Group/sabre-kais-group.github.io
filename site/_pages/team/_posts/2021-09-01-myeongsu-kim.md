@@ -6,10 +6,11 @@ image: myeongsu-kim.jpg
 role: Ph.D. Student, Computer Science
 permalink: 'team/myeongsu-kim'
 social:
-    website: https://www.linkedin.com/in/kim2167/
+    website:
+    linkedin: https://www.linkedin.com/in/kim2167/
     google-scholar:
     github:
-    orcid:
+    orcid: https://orcid.org/0000-0002-0392-2321
 education: []
 ---
 Member of the Sabre Kais Group.

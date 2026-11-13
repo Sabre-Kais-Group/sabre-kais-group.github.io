@@ -5,7 +5,13 @@ layout: default
 <nav aria-label="breadcrumb">
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="{{ site.baseurl }}/team">Team</a></li>
-    <li class="breadcrumb-item text-capitalize"><a href="{{ site.baseurl }}/team#{{ page.category }}">{{ page.category }}</a></li>
+    {% case page.category %}
+        {% when 'pi' %}{% assign section_id = 'pi' %}{% assign section_name = 'Principal Investigator' %}
+        {% when 'staff' %}{% assign section_id = 'postdocs' %}{% assign section_name = 'Postdoctoral Researchers' %}
+        {% when 'student' %}{% assign section_id = 'student' %}{% assign section_name = 'Graduate Students' %}
+        {% else %}{% assign section_id = page.category %}{% assign section_name = page.category %}
+    {% endcase %}
+    <li class="breadcrumb-item"><a href="{{ site.baseurl }}/team#{{ section_id }}">{{ section_name }}</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
 </ol>
 </nav>
@@ -18,29 +24,29 @@ layout: default
     <h1>{{ page.title }}</h1>
     <h3>{{ page.role }}</h3>
 
-    <ul class="list-inline list-unstyled">
-        {% if page.social.twitter %}
-            <li><a target="blank" href="{{page.social.twitter}}"><i class="fab fa-twitter"></i></a></li>
+    {% comment %}
+        Link bar: one icon per filled-in `social:` key in the member's .md file.
+        Available keys, icons and labels live in _data/social_links.yml.
+    {% endcomment %}
+    {% capture member_links %}
+        {% for link in site.data.social_links %}
+            {% assign url = page.social[link.key] | strip %}
+            {% if url != "" %}
+                {% assign label = link.label %}
+                {% if link.key == 'website' and page.category == 'pi' %}{% assign label = "Faculty profile" %}{% endif %}
+                <li><a href="{{ url }}" target="_blank" rel="noopener" title="{{ label }}" aria-label="{{ label }}"><i class="{{ link.icon }}" aria-hidden="true"></i></a></li>
+            {% endif %}
+        {% endfor %}
+        {% if page.cv %}
+            <li><a href="{{ page.cv | relative_url }}" target="_blank" rel="noopener" title="Curriculum Vitae (PDF)" aria-label="Curriculum Vitae (PDF)"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
         {% endif %}
-        {% if page.social.linkedin %}
-            <li><a target="blank" href="{{page.social.linkedin}}"><i class="fab fa-linkedin"></i></a></li>
-        {% endif %}
-        {% if page.social.github %}
-            <li><a target="blank" href="{{page.social.github}}"><i class="fab fa-github"></i></a></li>
-        {% endif %}
-        {% if page.social.website %}
-            <li><a target="blank" href="{{page.social.website}}"><i class="fas fa-globe"></i></a></li>
-        {% endif %}
-        {% if page.social.google-scholar %}
-            <li><a target="blank" href="{{page.social.google-scholar}}"><i class="fab fa-google"></i></a></li>
-        {% endif %}
-        {% if page.social.orcid %}
-            <li><a target="blank" href="{{page.social.orcid}}"><i class="fab fa-orcid"></i></a></li>
-        {% endif %}
-        {% if page.social.research-gate %}
-            <li><a target="blank" href="{{page.social.research-gate}}"><i class="fab fa-researchgate"></i></a></li>
-        {% endif %}
+    {% endcapture %}
+    {% assign member_links = member_links | strip %}
+    {% if member_links != "" %}
+    <ul class="member-links" aria-label="Links for {{ page.title }}">
+        {{ member_links }}
     </ul>
+    {% endif %}
 </div>
 
 <div class="member-profile-body">

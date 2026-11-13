@@ -6,7 +6,8 @@ image: nickolas-terehoff.jpeg
 role: Ph.D. Student, Physics
 permalink: 'team/nickolas-terehoff'
 social:
-    website: https://www.linkedin.com/in/nickolas-terehoff/
+    website:
+    linkedin: https://www.linkedin.com/in/nickolas-terehoff/
     google-scholar: 
     github:
     orcid:

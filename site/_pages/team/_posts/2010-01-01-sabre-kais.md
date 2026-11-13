@@ -8,12 +8,12 @@ permalink: 'team/sabre-kais'
 cv: '/docs/cv/sabre-kais-cv.pdf'
 social:
     website: 'https://ece.ncsu.edu/people/skais/'
-    google-scholar:
+    linkedin:
+    google-scholar: https://scholar.google.com/citations?user=wtnZaMMAAAAJ&hl=en
     github:
-    orcid:
+    orcid: https://orcid.org/0000-0003-0574-5346
 education: []
 ---
-
 Goodnight Distinguished Chair in Quantum Computing in the Department of Electrical and Computer Engineering at North Carolina State University. Research focuses on quantum information and quantum computation for complex many-body systems.
 
 **Email:** [skais@ncsu.edu](mailto:skais@ncsu.edu)

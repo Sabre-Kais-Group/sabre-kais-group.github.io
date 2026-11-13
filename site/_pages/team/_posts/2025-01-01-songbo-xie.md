@@ -7,6 +7,7 @@ role: Postdoctoral Researcher, ECE
 permalink: 'team/songbo-xie'
 social:
     website: https://sites.google.com/view/songboxie
+    linkedin:
     google-scholar: https://scholar.google.com/citations?hl=en&user=cJTETLoAAAAJ&view_op=list_works&sortby=pubdate
     github:
     orcid:
